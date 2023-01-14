@@ -2,6 +2,7 @@ import React from "react";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { BrowserRouter } from "react-router-dom";
 import { RecoilRoot } from "recoil";
+import PageTemplate from "./components/common/pageTemplate/pageTemplate";
 import Router from "./router/router";
 
 function App() {
@@ -11,7 +12,9 @@ function App() {
       <QueryClientProvider client={queryClient}>
         <RecoilRoot>
           <BrowserRouter>
-            <Router />
+            <PageTemplate>
+              <Router />
+            </PageTemplate>
           </BrowserRouter>
         </RecoilRoot>
       </QueryClientProvider>

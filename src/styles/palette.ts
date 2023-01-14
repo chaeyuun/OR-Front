@@ -136,5 +136,5 @@ export const palette = {
   purple,
   indigo,
   gray,
-  main: "#0dc76e",
+  main: "#6949FF",
 };
